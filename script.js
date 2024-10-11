@@ -29,4 +29,10 @@ function addItemButtonClicked (){
     input.focus();
 }
 
+input.addEventListener("keypress",function(event){
+    if(event.key==="Enter"){
+        addItemButtonClicked();
+    }
+})
+
 addItemButton.addEventListener("click",addItemButtonClicked);
